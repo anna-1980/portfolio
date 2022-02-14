@@ -11,7 +11,7 @@ nav{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: $dark-color;
-  box-shadow: 2px 2px 6px $bright-color;
+  box-shadow: 2px 2px 8px $gradient1-middle;
 
   button {
     background-color: transparent;
@@ -28,6 +28,7 @@ nav{
       text-align: center;
       border-radius: 20px;
       font-size: 1rem;
+      transition-duration: 0.5s;
     }
   }
 

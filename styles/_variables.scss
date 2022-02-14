@@ -11,6 +11,9 @@ $gradient1-middle: rgb(175, 63, 185);
 $gradient1-stop: rgb(230, 230, 92);
 $skill-box:4.5rem;
 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 @mixin flex($column, $justify, $align) {
   display: flex;
   flex-direction: $column;

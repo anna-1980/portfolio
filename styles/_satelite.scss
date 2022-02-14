@@ -1,5 +1,5 @@
 .container {
-  height: 800px;
+  height: 510px;
   width: 410px;
 //   background-color: rgb(211, 141, 55);
   margin: auto;
@@ -13,7 +13,7 @@
   position: absolute;
   z-index: 2;
 
-  height: 372px;
+  height: 352px;
   width: 372px;
   max-width: 450px;
   max-height: 450px;
@@ -24,10 +24,10 @@
 .box1 {
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
   animation: satelite 8s infinite linear;
-  top: 30%;
+  top: 45%;
   left: -10px;
   //   background-image: url(../assets/gitHub.png);
   background-size: cover;
@@ -41,9 +41,9 @@
 
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 1s;
 }
@@ -51,9 +51,9 @@
 .box3 {
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 2s;
 }
@@ -61,18 +61,18 @@
 .box4 {
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 3s;
 }
 .box5 {
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 4s;
 }
@@ -80,9 +80,9 @@
 .box6 {
   height: $skill-box;
   width: $skill-box;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 5s;
 }
@@ -90,9 +90,9 @@
 .box7 {
   height: $skill-box;
   width: 5.5rem;
-  border-radius: 30%;
+  border-radius: 45%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 6s;
 }
@@ -105,12 +105,32 @@
   background-color: $dark-color;
   height: $skill-box;
   width: 5rem;
-  border-radius: 30%;
+  border-radius: 15px;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 0%;
   animation: satelite 8s infinite linear 7s;
 }
+
+
+.phaser{
+    position: absolute;
+    bottom: 10px;
+    padding: 2rem;
+    height: 120px;
+    width: 150px;
+    background-image: url(../assets/phaser.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.phaser2{
+    position: absolute;
+    bottom: 110px;
+    color: $green-bright;
+}
+
 
 @keyframes satelite {
   0% {
@@ -145,7 +165,7 @@
     opacity: 1;
   }
 
-  52% {
+  51% {
     z-index: 1;
   }
   75% {

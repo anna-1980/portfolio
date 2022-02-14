@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Zdyb Web developer</title>
+    <link rel="icon"  href="#"/>
+    <meta
+    name="description"
+    content="Anna Zdyb Web Designer and Developer front end HTML CSS SASS Javascript React "
+  />
+    
+<meta property='og:title' content='Biology Bag of Wonders'/>
+<meta   property='og:image' content='https://i.ibb.co/3T0Q8s3/Thumb-Nail.png'/>
+<meta property='og:description' content='I founded Biology Bag Of Wonders because I always liked 
+visualising my science, eventually I learned how to use graphic programs and it became a thing. 
+Here is my web space where I can share my creativity, scientific illustration and offer you my services'/>
+<meta property='og:url' content='https://biology-bag-of-wonders.netlify.app/'/>
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='627' />
+<meta property='og:type' content='website' >
+
+<link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <a href='./index.html'><button  >Home</button></a>
+            <a href='./index.html'><button   >Projects</button></a>
+            <a href='./contact.html' > <button class=' active'>Contact</button></a>
+            <a href='./playground.html' > <button >CSS fun</button></a>
+        </div>
+    </nav>
+ <div class='contactForm'>
+    <form 
+    name="contact" 
+    method="post" 
+    data-netlify-recaptcha="true"
+    data-netlify="true"
+    >
+        <input type="hidden" name="form-name" value="contact" />
+          <div class="nameInput">
+            <label htmlFor="name">Name</label> 
+            <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your name here" 
+        required/>
+          </div>
+          <div class="emailAddress">
+            <label htmlFor="email" >Email</label>  
+            <input type="email" name="email" id="email" placeholder="Enter your email here" required />
+          </div>
+          <div class="contactMessage">
+            <label htmlFor="message"  >Message</label>
+            <textarea  name="message" id="message" cols="40" rows="10" required placeholder='message for me'></textarea>
+          </div>
+          <div data-netlify-recaptcha="true"></div>
+          <div class="buttonDiv">
+            <button type="submit" class="formButton">Send</button>
+          </div>
+        </form>
+    
+
+ </div>
+
+ 
+</body>
+</html>

@@ -1,0 +1,18 @@
+$dark-color: rgb(3, 28, 44);
+$bright-color: rgb(129, 158, 220);
+$bright-color2: rgb(213, 229, 238);
+$secondary-color-d: rgb(92, 17, 67);
+$secondary-color-b: rgb(242, 146, 210);
+$green-dark: rgb(43, 87, 87);
+$green-middle: rgb(93, 149, 146);
+$green-bright: rgb(167, 215, 204);
+$gradient1-start: rgb(23, 50, 109);
+$gradient1-middle: rgb(175, 63, 185);
+$gradient1-stop: rgb(230, 230, 92);
+
+@mixin flex($column, $justify, $align) {
+  display: flex;
+  flex-direction: $column;
+  justify-content: $justify;
+  align-items: $align;
+}

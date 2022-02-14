@@ -1,0 +1,183 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #819edc), to(#17326d)) no-repeat;
+  background: linear-gradient(180deg, #819edc 10%, #17326d 100%) no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  margin-top: 3vw;
+  margin-left: 1vw;
+}
+
+.picture {
+  height: 70vw;
+  width: 70vw;
+  max-width: 450px;
+  max-height: 450px;
+  background-image: url(../assets/anna-green03c.png);
+  background-size: cover;
+  border-radius: 10%;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d5e5ee;
+}
+
+.nameInput, .emailAddress, .contactMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.formButton {
+  margin-left: 0.5rem;
+  background-color: #f292d2;
+  border: none;
+  color: #5c1143;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #031c2c;
+  -webkit-box-shadow: 2px 2px 6px #819edc;
+          box-shadow: 2px 2px 6px #819edc;
+}
+
+nav .navigation {
+  width: content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: #a7d7cc;
+  margin: 0rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #a7d7cc;
+  color: #2b5757;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+nav .active {
+  background-color: #a7d7cc;
+  color: #2b5757;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+          box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #031c2c), color-stop(#17326d), color-stop(110%, #af3fb9)) no-repeat;
+  background: linear-gradient(180deg, #031c2c 60%, #17326d, #af3fb9 110%) no-repeat;
+  height: 100%;
+}
+
+.projects {
+  background-color: azure;
+}
+
+@media screen and (max-width: 540px) {
+  .navigation {
+    font-size: 0.5rem;
+    width: 100%;
+    padding: 0;
+  }
+  .navigation button {
+    margin: 0 0.7rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

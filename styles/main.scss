@@ -1,0 +1,44 @@
+ 
+@import "variables.scss";
+@import "general.scss";
+@import"navi.scss";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: linear-gradient(180deg, $dark-color 60%, $gradient1-start, $gradient1-middle 110%) no-repeat;
+    height: 100%;
+}
+
+
+.projects{
+background-color: azure;
+}
+
+
+@media screen and (max-width: 540px) {
+
+.navigation{ 
+    // background-color: purple;
+    font-size: 0.5rem;
+    width: 100%;
+    padding: 0;
+    
+
+    button{
+        margin: 0 0.7rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+}

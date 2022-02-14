@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "general.scss";
 @import"navi.scss";
-
+@import"satelite.scss";
 
 
 
@@ -39,6 +39,12 @@ background-color: azure;
     }
 }
 
-
+.container {
+    height: 50rem;
+    width: 400px;
+    margin: auto;
+    position: relative;
+    @include flex(row, center, center);
+  }
 
 }

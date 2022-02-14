@@ -109,6 +109,7 @@ p {
 
 .footer {
   @include flex(column, center, center);
+  padding-bottom: 100%;
   i {
     font-size: 2rem;
     margin-top: 1rem;

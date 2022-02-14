@@ -124,3 +124,8 @@ p {
 .links {
   @include flex(row, center, center);
 }
+
+#projects{
+     padding-top: 3em;
+     padding-bottom: 2rem;
+}

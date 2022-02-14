@@ -201,6 +201,11 @@ p {
           align-items: center;
 }
 
+#projects {
+  padding-top: 3em;
+  padding-bottom: 2rem;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +553,7 @@ i {
 html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #031c2c), color-stop(#17326d), color-stop(110%, #af3fb9)) no-repeat;
   background: linear-gradient(180deg, #031c2c 60%, #17326d, #af3fb9 110%) no-repeat;
+  color: #a7d7cc;
   font-family: 'Balsamiq Sans', cursive;
 }
 

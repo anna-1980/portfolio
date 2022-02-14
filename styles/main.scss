@@ -12,7 +12,13 @@
 }
 
 html{
-    background: linear-gradient(180deg, $dark-color 60%, $gradient1-start, $gradient1-middle 110%) no-repeat;
+    background: linear-gradient(180deg, 
+    
+    $dark-color 8%, 
+    $gradient1-start 70%,
+    $gradient1-middle  130%, 
+
+    ) no-repeat;
     color: $green-bright;
     font-family: 'Balsamiq Sans', cursive;
 }

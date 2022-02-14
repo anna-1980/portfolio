@@ -1,54 +1,124 @@
-
-section{
-    @include flex(row, center, center);
+section {
+  @include flex(column, center, center);
 }
 
-h1{
-    
-     display: inline-block;
-     background: linear-gradient(180deg,  $bright-color 10%, $gradient1-start 100%) no-repeat;
-     background-clip: text;
-     -webkit-background-clip: text;
-     color: transparent;
-     font-size: 3rem;
-     margin-top: 3vw;
-     margin-left: 1vw;
- }
- 
-.picture{
-     height: 70vw;
-     width: 70vw;
-     max-width: 450px;
-     max-height: 450px;
-     background-image: url(../assets/anna-green03c.png);
+h1 {
+  display: inline-block;
+  background: linear-gradient(180deg, $bright-color 10%, $gradient1-start 100%)
+    no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  margin-top: 3vw;
+  margin-left: 1vw;
+}
+
+h2 {
+  color: $green-bright;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: $green-dark;
+  font-size: 2rem;
+}
+
+p {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.project1 {
+  height: 40vw;
+  width: 25vw;
+  background-image: url(../assets/XmasMarket);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: $dark-color;
+}
+
+.project2 {
+     height: 40vw;
+     width: 25vw;
+     background-image: url(../assets/ScienceArcade.png);
      background-size: cover;
-     // background-color: azure;
-     border-radius: 10%;
+     overflow: hidden;
+     border-radius: 15px;
+     border-width: 2px;
+     border-color: $dark-color;
+   }
+ 
+.project3 {
+     height: 40vw;
+     width: 25vw;
+     background-image: url(../assets/BiologyBag.png);
+     background-size: cover;
+     overflow: hidden;
+     border-radius: 15px;
+     border-width: 2px;
+     border-color: $dark-color;
 }
 
-// contact form 
-
-.contactForm{
-     @include flex(row, center, center);
-     color: $bright-color2;
-
+.projectframes {
+  @include flex(row, center, center);
+  padding-bottom: 3rem;
+  div {
+    margin: 1rem 0.5rem;
+  }
 }
 
-.nameInput, .emailAddress, .contactMessage {
-     @include flex(column, center, flex-start);
-     padding: 0.5rem;
+.projects {
+  margin-top: 3rem;
+  background-color: $green-bright;
+  width: 100%;
+  text-align: center;
 }
 
-.formButton{
-    margin-left: 0.5rem;
-    background-color: $secondary-color-b;
-    border: none;
-    color: $secondary-color-d;
-    padding: 0.3rem 0.5rem;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
+.contactForm {
+  @include flex(row, center, center);
+  color: $bright-color2;
 }
 
+.nameInput,
+.emailAddress,
+.contactMessage {
+  @include flex(column, center, flex-start);
+  padding: 0.5rem;
+}
 
+.formButton {
+  margin-left: 0.5rem;
+  background-color: $secondary-color-b;
+  border: none;
+  color: $secondary-color-d;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  @include flex(column, center, center);
+  i {
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  div {
+    padding: 0.2rem;
+    color: $green-bright;
+  }
+}
+
+.links {
+  @include flex(row, center, center);
+}

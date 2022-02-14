@@ -1,0 +1,199 @@
+.container {
+  height: 510px;
+  width: 410px;
+//   background-color: rgb(211, 141, 55);
+  margin: auto;
+  position: relative;
+  @include flex(row, center, center);
+}
+
+.picture {
+  transform-origin: center;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+
+  height: 352px;
+  width: 372px;
+  max-width: 450px;
+  max-height: 450px;
+  background-image: url(../assets/anna-green03c.png);
+  background-size: cover;
+}
+
+.box1 {
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  animation: satelite 8s infinite linear;
+  top: 45%;
+  left: -10px;
+  //   background-image: url(../assets/gitHub.png);
+  background-size: cover;
+  color: yellow;
+}
+
+.box2 {
+  //   background-image: url(../assets/github-brands.svg);
+  background-size: cover;
+  background-color: $green-bright;
+
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 1s;
+}
+
+.box3 {
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 2s;
+}
+
+.box4 {
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 3s;
+}
+.box5 {
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 4s;
+}
+
+.box6 {
+  height: $skill-box;
+  width: $skill-box;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 5s;
+}
+
+.box7 {
+  height: $skill-box;
+  width: 5.5rem;
+  border-radius: 45%;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 6s;
+}
+
+.box8 {
+  background-image: url(../assets/mongoDB-2.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  background-color: $dark-color;
+  height: $skill-box;
+  width: 5rem;
+  border-radius: 15px;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  animation: satelite 8s infinite linear 7s;
+}
+
+
+.phaser{
+    position: absolute;
+    bottom: 10px;
+    padding: 2rem;
+    height: 120px;
+    width: 150px;
+    background-image: url(../assets/phaser.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.phaser2{
+    position: absolute;
+    bottom: 110px;
+    color: $green-bright;
+}
+
+
+@keyframes satelite {
+  0% {
+    transform: translate(-15px) translateY(0px) skewY(8deg) rotateY(45deg)
+      scaleX(5%);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  15% {
+    transform: translateX(80px) translateY(20px) scale(1.1);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  25% {
+    transform: translateX(150px) translateY(25px) scale(1.2);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateX(250px) translateY(20px) scale(1.1) skewY(-3deg);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(360px) translateY(15px) skewY(-15deg) scale(1.05)
+      rotateY(90deg);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  51% {
+    z-index: 1;
+  }
+  75% {
+    transform: translateX(150px) translateY(-20px) skewY(10deg) scale(0.7);
+    z-index: 1;
+    opacity: 0.2;
+  }
+
+  85% {
+    transform: translateX(20px) translateY(-25px) skewY(5deg) scale(0.7);
+    z-index: 1;
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translate(-15px) skewY(-8deg) scaleX(5%);
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+i {
+padding-top: 0.3rem;
+  height: 100%;
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  color: $green-bright;
+  background-color: $dark-color;
+  border-radius: 15px;
+}

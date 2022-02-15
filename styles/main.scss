@@ -28,6 +28,17 @@ html{
 
 @media screen and (max-width: 540px) {
 
+p{
+    font-size: 1rem;
+}
+
+div > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+  
+        
+    }    
+
 .navigation{ 
     // background-color: purple;
     font-size: 0.5rem;
@@ -41,6 +52,17 @@ html{
         font-size: 1.1rem;
     }
 }
+
+.project1 .project2 .project3{
+    height: 40vw;
+    width: 30vw;
+     
+    
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: $dark-color;
+  }
+
 
 .container {
     height: 510px;

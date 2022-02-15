@@ -1,5 +1,6 @@
 section {
   @include flex(column, center, center);
+  margin: 0;
 }
 
 h1 {
@@ -39,6 +40,16 @@ p {
   line-height: 1.6;
 }
 
+div > p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 0.2rem 0.5rem;
+  margin: 0;
+   
+}
+ 
+
 .project1 {
   height: 40vw;
   width: 25vw;
@@ -74,14 +85,14 @@ p {
 
 .projectframes {
   @include flex(row, center, center);
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
   div {
     margin: 2rem 0.5rem;
   }
 }
 
-.projects {
-  margin-top: 6rem;
+.divider {
+  margin-top: 3rem;
   margin-bottom: 2rem;
   background-color: $bright-color2;
   width: 100%;
@@ -120,6 +131,19 @@ p {
   }
 }
 
+
+.about{
+  @include flex(column, center, center);
+  p{
+    margin: 0.3rem 0.3rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0.5rem 0.5rem;
+    font-weight: 300;
+  }
+}
+
+
 .footer {
   @include flex(column, center, center);
   padding-bottom: 100%;
@@ -142,12 +166,18 @@ p {
   @include flex(row, center, center);
 }
 
-#projects {
+.copyright{
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 2rem;
 }
 
+#projects {
+  padding-top: 0.2em;
+  padding-bottom: 0.2rem;
+}
 
+ 
 
 // background: linear-gradient(
 //      180deg,

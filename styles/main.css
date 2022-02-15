@@ -13,6 +13,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
 h1 {
@@ -45,6 +46,14 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
+}
+
+div > p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 0.2rem 0.5rem;
+  margin: 0;
 }
 
 .project1 {
@@ -94,15 +103,15 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 .projectframes div {
   margin: 2rem 0.5rem;
 }
 
-.projects {
-  margin-top: 6rem;
+.divider {
+  margin-top: 3rem;
   margin-bottom: 2rem;
   background-color: #d5e5ee;
   width: 100%;
@@ -168,6 +177,30 @@ p {
           transition-duration: 0.5s;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about p {
+  margin: 0.3rem 0.3rem;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 0.5rem 0.5rem;
+  font-weight: 300;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,9 +252,15 @@ p {
           align-items: center;
 }
 
-#projects {
+.copyright {
+  text-align: center;
   padding-top: 3em;
   padding-bottom: 2rem;
+}
+
+#projects {
+  padding-top: 0.2em;
+  padding-bottom: 0.2rem;
 }
 
 nav {
@@ -578,6 +617,13 @@ html {
 }
 
 @media screen and (max-width: 540px) {
+  p {
+    font-size: 1rem;
+  }
+  div > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
   .navigation {
     font-size: 0.5rem;
     width: 100%;
@@ -587,6 +633,13 @@ html {
     margin: 0 0.7rem;
     padding: 0.5rem 0.5rem;
     font-size: 1.1rem;
+  }
+  .project1 .project2 .project3 {
+    height: 40vw;
+    width: 30vw;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: #031c2c;
   }
   .container {
     height: 510px;

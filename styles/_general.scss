@@ -147,14 +147,19 @@ div > p {
 
 .footer {
   @include flex(column, center, center);
-  padding-bottom: 100%;
+  padding-bottom: 40vh;
+  a{
+    padding: 1rem;
+
+  }
   i {
     font-size: 2rem;
     margin-top: 1rem;
     padding: 0.5rem;
     &:hover {
       transform: scale(1.2);
-      transition-duration: 1s;
+      transition-duration: 0.5s;
+      box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
     }
   }
   div {

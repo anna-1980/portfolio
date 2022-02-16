@@ -163,7 +163,8 @@ div > p {
   padding: 0.3rem 0.5rem;
   text-align: center;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -630,6 +631,10 @@ html {
   div > p {
     font-size: 0.8rem;
     font-weight: 300;
+  }
+  .formButton {
+    border-radius: 50%;
+    font-weight: 700;
   }
   .navigation {
     font-size: 0.5rem;

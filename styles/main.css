@@ -734,9 +734,6 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  .picture {
-    left: 0;
-  }
   .skills div {
     padding: 0.3rem 0.9rem;
   }

@@ -739,8 +739,8 @@ html {
     font-size: 1.1rem;
   }
   .skills h2 {
-    text-decoration: underline;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #af3fb9;
   }
 }
 /*# sourceMappingURL=main.css.map */

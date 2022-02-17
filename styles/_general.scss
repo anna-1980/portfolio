@@ -3,6 +3,11 @@ section {
   margin: 0;
 }
 
+a{
+color:$secondary-color-b;
+text-decoration: none;
+}
+
 h1 {
   display: inline-block;
   background: linear-gradient(
@@ -49,8 +54,24 @@ div > p {
   width: 100%;
    
 }
- 
 
+.skills{
+  @include flex(row, space-around, flex-start);
+  // margin: 0 0 0 auto;
+  
+  div{
+    padding: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+    border-bottom: 2px solid $gradient1-middle;
+  }
+}
+
+ul{
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
 .project1 {
   height: 40vw;
   width: 25vw;

@@ -96,12 +96,14 @@ div > p {
 .container {
     height: 510px;
     width: 410px;
-    margin: auto;
+    // margin: auto;
     position: relative;
     @include flex(row, center, center);
   }
 
-
+.picture{
+    left: 0;
+}
 
 
   .skills{

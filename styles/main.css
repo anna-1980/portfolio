@@ -738,12 +738,14 @@ html {
     left: 0;
   }
   .skills div {
-    font-size: 1.1rem;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.9rem;
   }
   .skills h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-bottom: 2px solid #af3fb9;
+  }
+  .skills li {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

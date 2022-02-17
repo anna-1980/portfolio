@@ -96,22 +96,28 @@ div > p {
 .container {
     height: 510px;
     width: 410px;
-    margin: auto;
+    // margin: auto;
     position: relative;
     @include flex(row, center, center);
   }
 
-
+.picture{
+    left: 0;
+}
 
 
   .skills{
    
     div{
-        font-size: 1.1rem;
+        
+        padding: 0.3rem 0.9rem;
     }
     h2{
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       border-bottom: 2px solid $gradient1-middle;
+    }
+    li{
+        font-size: 1rem;
     }
   }
 

@@ -40,6 +40,10 @@ h2{
     font-size: 1.2rem;
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
 div > p {
     font-size: 0.8rem;
     font-weight: 300;
@@ -57,11 +61,15 @@ div > p {
     width: 100%;
     padding: 0;
     
+    
 
     button{
-        margin: 0 0.7rem;
-        padding: 0.2rem 0.5rem;
-        font-size: 1.1rem;
+         
+        margin: 0 0.3rem;
+        padding: 0.2rem 0.3rem;
+        font-size: 1rem;
+        border: 1px solid rgba(167, 215, 204, 0.5);
+        border-radius: 10px;
     }
 }
 
@@ -85,8 +93,18 @@ div > p {
   }
 
 
-  h3{
-      font-size: 1.5rem;
+
+
+  .skills{
+   
+    div{
+        font-size: 1.1rem;
+    }
+    h2{
+      text-decoration: underline;
+      font-size: 1.1rem;
+    }
   }
+
 }
 

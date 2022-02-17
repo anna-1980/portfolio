@@ -75,7 +75,6 @@ div > p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 0 0 0 auto;
 }
 
 .skills div {
@@ -699,6 +698,16 @@ html {
     font-size: 1rem;
     border: 1px solid rgba(167, 215, 204, 0.5);
     border-radius: 10px;
+  }
+  .navigation button:hover {
+    background-color: #a7d7cc;
+    color: #2b5757;
+    padding: 0.2rem 0.3rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
   .project1 .project2 .project3 {
     height: 40vw;

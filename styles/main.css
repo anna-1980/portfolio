@@ -737,9 +737,10 @@ html {
   }
   .skills div {
     font-size: 1.1rem;
+    padding: 0.3rem 1rem;
   }
   .skills h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-bottom: 2px solid #af3fb9;
   }
 }

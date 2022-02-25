@@ -45,6 +45,11 @@ p {
   line-height: 1.6;
 }
 
+textarea, input{
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 0.9rem;
+}
+
 div > p {
   font-size: 1rem;
   font-weight: 400;
@@ -124,6 +129,7 @@ ul{
 .contactForm {
   @include flex(row, center, center);
   color: $bright-color2;
+  
 }
 
 .nameInput,
@@ -133,6 +139,7 @@ ul{
  {
   @include flex(column, center, flex-start);
   padding: 0.5rem;
+  
 }
 
 .formButton {
@@ -143,6 +150,7 @@ ul{
   padding: 0.3rem 0.5rem;
   text-align: center;
   border-radius: 20px;
+  font-family: 'Balsamiq Sans', cursive;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;

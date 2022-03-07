@@ -113,6 +113,8 @@ ul{
 .project4 {
   height: 40vw;
   width: 25vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-image: url(../assets/AngryVirusesCover2.png);
   background-size: cover;
   overflow: hidden;
@@ -125,7 +127,7 @@ ul{
   @include flex(row, center, center);
   padding-bottom: 0.5rem;
   div {
-    margin: 2rem 0.5rem;
+    margin: 1rem 0.5rem;
   }
 }
 

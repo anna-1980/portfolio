@@ -110,6 +110,17 @@ ul{
   border-color: $dark-color;
 }
 
+.project4 {
+  height: 40vw;
+  width: 25vw;
+  background-image: url(../assets/AngryVirusesCover2.png);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: $dark-color;
+}
+
 .projectframes {
   @include flex(row, center, center);
   padding-bottom: 0.5rem;

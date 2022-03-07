@@ -129,6 +129,17 @@ ul {
   border-color: #031c2c;
 }
 
+.project4 {
+  height: 40vw;
+  width: 25vw;
+  background-image: url(../assets/AngryVirusesCover2.png);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #031c2c;
+}
+
 .projectframes {
   display: -webkit-box;
   display: -ms-flexbox;

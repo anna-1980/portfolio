@@ -61,7 +61,7 @@ div > p {
 }
 
 .skills{
-  @include flex(row, space-around, flex-start);
+  @include flex(row, center, flex-start);
   // margin: 0 0 0 auto;
   
   div{
@@ -77,9 +77,21 @@ ul{
   margin-left: 1rem;
   margin-top: 0.3rem;
 }
+
+.projectframes {
+  @include flex(row, center, flex-start);
+  
+  padding-bottom: 0.5rem;
+  div {
+    flex: 1;
+    margin: 1rem 0.5rem;
+  }
+}
+
 .project1 {
   height: 40vw;
   width: 25vw;
+  
   background-image: url(../assets/XmasMarket);
   background-size: cover;
   overflow: hidden;
@@ -91,6 +103,7 @@ ul{
 .project2 {
   height: 40vw;
   width: 25vw;
+  
   background-image: url(../assets/ScienceArcade.png);
   background-size: cover;
   overflow: hidden;
@@ -102,6 +115,7 @@ ul{
 .project3 {
   height: 40vw;
   width: 25vw;
+  
   background-image: url(../assets/BiologyBag.png);
   background-size: cover;
   overflow: hidden;
@@ -113,6 +127,7 @@ ul{
 .project4 {
   height: 40vw;
   width: 25vw;
+  
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-image: url(../assets/AngryVirusesCover2.png);
@@ -123,11 +138,203 @@ ul{
   border-color: $dark-color;
 }
 
-.projectframes {
-  @include flex(row, center, center);
-  padding-bottom: 0.5rem;
-  div {
-    margin: 1rem 0.5rem;
+.CSSplayground{
+  height: 40vw;
+  width: 25vw;
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  background-color: azure;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: $dark-color;
+  overflow: hidden;
+   
+}
+
+
+
+.CSSplayground > div {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  margin-left: 5%;
+  text-align: center;
+  
+  opacity: 0;
+  transition: 3s;
+  z-index: 1;
+    &:hover{
+      cursor: pointer;
+      color: grey;
+      opacity: 1;
+      transition: 1s;
+  }
+}
+
+#checkIt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-top: 50%;
+  text-align: center;
+  color: rgba(128, 128, 128, 1);
+  font-size: 1.3rem;
+  animation: ghost 3s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ghost {
+  from{
+   opacity: 0;
+  }
+  to{
+   opacity: 1;
+  }
+}
+
+.animOrbit{
+  height: 80%;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  //   &:hover{
+  //     cursor: pointer;
+  //     opacity: 1;
+  //     transition: 1s;
+  // }
+  // background-color: red;
+}
+
+
+.circle{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border-radius: 10px;
+  background: rgb(149, 224, 36);
+  animation: hover 8s ease-in-out infinite;
+  animation-direction: alternate;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.circle2{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  border-radius: 10px;
+  background: rgb(245, 169, 54);
+  animation: hover 7s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 0.9s;
+  transform: rotate(-45deg);
+  transform-origin: 20px 30px;
+}
+
+
+.circle3{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  border-radius: 10px;
+  background: rgb(68, 149, 216);
+  transform-origin: bottom;
+  animation: hover 8s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 0.7s;
+}
+.circle4{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border-radius: 10px;
+  background: rgb(206, 103, 231);
+  transform-origin: bottom;
+  animation: hover 5s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+}
+.circl5{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  border-radius: 10px;
+  background: rgb(47, 255, 227);
+  transform-origin: -30px -50px;
+  animation: hover 8s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 0.5s;
+}
+
+.circle6{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  border-radius: 10px;
+  background: rgb(249, 252, 82);
+  transform-origin: -40 40;
+  animation: hover 5s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+@keyframes hover {
+
+  0%{
+    transform: 
+    scale(1) 
+    translateX(10px) 
+    translateY(60px);
+    offset-distance: 50%;
+    opacity: 1;
+  }
+  
+  25%{
+    transform: 
+    scale(0.5) 
+    translateX(-20px) 
+    translateY(20px) ;
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+  50%{
+    transform: 
+    scale(2) 
+    translateX(50px)
+    translateY(40px);
+    offset-distance: 20%;
+    opacity: 1;
+  }
+  75%{
+    transform: 
+    scale(0.5) 
+    translateX(-20px)
+    translateY(-60px);
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+
+  100%{
+    transform: 
+    scale(2) 
+    translateX(40px)
+    translateY(-40px);
+    offset-distance: 50%;
+    opacity: 1;
   }
 }
 

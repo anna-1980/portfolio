@@ -53,6 +53,11 @@ p {
   line-height: 1.6;
 }
 
+#PsmallFont {
+  max-width: 100%;
+  font-size: 0.7rem;
+}
+
 textarea, input {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 0.9rem;
@@ -114,7 +119,7 @@ ul {
   padding-bottom: 0.5rem;
 }
 
-.projectframes div {
+.projectframes .projectframes__Margin {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -122,6 +127,7 @@ ul {
 }
 
 .project1 {
+  position: relative;
   height: 40vw;
   width: 25vw;
   background-image: url(../assets/XmasMarket);
@@ -157,8 +163,6 @@ ul {
 .project4 {
   height: 40vw;
   width: 25vw;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background-image: url(../assets/AngryVirusesCover2.png);
   background-size: cover;
   overflow: hidden;
@@ -423,6 +427,44 @@ ul {
   background-color: #d5e5ee;
   width: 100%;
   text-align: center;
+}
+
+.project1, .project2, .project3, .project4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.project1:hover .Xmas-stack, .project1:hover .arcade-stack, .project1:hover .biology-stack, .project1:hover .Game-stack, .project2:hover .Xmas-stack, .project2:hover .arcade-stack, .project2:hover .biology-stack, .project2:hover .Game-stack, .project3:hover .Xmas-stack, .project3:hover .arcade-stack, .project3:hover .biology-stack, .project3:hover .Game-stack, .project4:hover .Xmas-stack, .project4:hover .arcade-stack, .project4:hover .biology-stack, .project4:hover .Game-stack {
+  opacity: 1;
+}
+
+.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.4)));
+  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.4));
+  font-family: arial;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.projectTitle {
+  font-size: 1rem;
+  color: black;
+  font-family: arial;
+  font-weight: 600;
+}
+
+.techStack {
+  color: black;
+  font-size: 0.9rem;
+  line-height: 120%;
 }
 
 .contactForm {
@@ -1013,6 +1055,18 @@ html {
   }
   .skills li {
     font-size: 1rem;
+  }
+  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+    padding: 0rem 0rem;
+  }
+  #PsmallFont {
+    max-width: 80%;
+  }
+  .projectTitle {
+    font-size: 0.8rem;
+  }
+  .techStack {
+    font-size: 0.65rem;
   }
 }
 

@@ -45,6 +45,11 @@ p {
   line-height: 1.6;
 }
 
+#PsmallFont{
+  max-width: 100%;
+  font-size: 0.7rem;
+}
+
 textarea, input{
   font-family: 'Balsamiq Sans', cursive;
   font-size: 0.9rem;
@@ -82,16 +87,16 @@ ul{
   @include flex(row, center, flex-start);
   
   padding-bottom: 0.5rem;
-  div {
+  .projectframes__Margin {
     flex: 1;
     margin: 1rem 0.5rem;
   }
 }
 
 .project1 {
+  position: relative;
   height: 40vw;
   width: 25vw;
-  
   background-image: url(../assets/XmasMarket);
   background-size: cover;
   overflow: hidden;
@@ -124,12 +129,12 @@ ul{
   border-color: $dark-color;
 }
 
+
+
 .project4 {
   height: 40vw;
   width: 25vw;
-  
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+ 
   background-image: url(../assets/AngryVirusesCover2.png);
   background-size: cover;
   overflow: hidden;
@@ -137,7 +142,7 @@ ul{
   border-width: 2px;
   border-color: $dark-color;
 }
-
+// css playground animations
 .CSSplayground{
   height: 40vw;
   width: 25vw;
@@ -152,8 +157,6 @@ ul{
   overflow: hidden;
    
 }
-
-
 
 .CSSplayground > div {
   position: absolute;
@@ -346,6 +349,55 @@ ul{
   text-align: center;
 }
 
+// css playground animations
+
+// hover over descriptions of my projects
+// .projectframes > div {
+//   position: relative;
+// }
+
+.project1, .project2, .project3, .project4{
+  position: relative;
+  overflow: hidden;
+}
+
+.project1:hover,.project2:hover, .project3:hover, .project4:hover{
+  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+    opacity: 1;
+  }
+
+}
+
+.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  background-image: linear-gradient( 
+    rgba(231, 230, 230, 0.9), 
+    rgba(231, 230, 230, 0.4)) ;
+  font-family: arial;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.projectTitle{
+  font-size: 1rem;
+  color: black;
+  font-family: arial;
+  font-weight: 600;
+}
+
+.techStack{
+  color: black;
+  font-size: 0.9rem; 
+  line-height: 120%;
+}
+
+// hover over descriptions of my projects
 .contactForm {
   @include flex(row, center, center);
   color: $bright-color2;

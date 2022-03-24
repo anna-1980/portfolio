@@ -75,8 +75,9 @@ div > p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -94,6 +95,30 @@ div > p {
 ul {
   margin-left: 1rem;
   margin-top: 0.3rem;
+}
+
+.projectframes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 0.5rem;
+}
+
+.projectframes div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 1rem 0.5rem;
 }
 
 .project1 {
@@ -142,25 +167,254 @@ ul {
   border-color: #031c2c;
 }
 
-.projectframes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 0.5rem;
+.CSSplayground {
+  height: 40vw;
+  width: 25vw;
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  background-color: azure;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #031c2c;
+  overflow: hidden;
 }
 
-.projectframes div {
-  margin: 1rem 0.5rem;
+.CSSplayground > div {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  margin-left: 5%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  z-index: 1;
+}
+
+.CSSplayground > div:hover {
+  cursor: pointer;
+  color: grey;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#checkIt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-top: 50%;
+  text-align: center;
+  color: gray;
+  font-size: 1.3rem;
+  -webkit-animation: ghost 3s ease-in-out infinite;
+          animation: ghost 3s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes ghost {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ghost {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animOrbit {
+  height: 80%;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  border-radius: 10px;
+  background: #95e024;
+  -webkit-animation: hover 8s ease-in-out infinite;
+          animation: hover 8s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.circle2 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  border-radius: 10px;
+  background: #f5a936;
+  -webkit-animation: hover 7s ease-in-out infinite;
+          animation: hover 7s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 20px 30px;
+          transform-origin: 20px 30px;
+}
+
+.circle3 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  border-radius: 10px;
+  background: #4495d8;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: hover 8s ease-in-out infinite;
+          animation: hover 8s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.circle4 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border-radius: 10px;
+  background: #ce67e7;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: hover 5s ease-in-out infinite;
+          animation: hover 5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.circl5 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  border-radius: 10px;
+  background: #2fffe3;
+  -webkit-transform-origin: -30px -50px;
+          transform-origin: -30px -50px;
+  -webkit-animation: hover 8s ease-in-out infinite;
+          animation: hover 8s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.circle6 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  border-radius: 10px;
+  background: #f9fc52;
+  -webkit-transform-origin: -40 40;
+          transform-origin: -40 40;
+  -webkit-animation: hover 5s ease-in-out infinite;
+          animation: hover 5s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes hover {
+  0% {
+    -webkit-transform: scale(1) translateX(10px) translateY(60px);
+            transform: scale(1) translateX(10px) translateY(60px);
+    offset-distance: 50%;
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale(0.5) translateX(-20px) translateY(20px);
+            transform: scale(0.5) translateX(-20px) translateY(20px);
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: scale(2) translateX(50px) translateY(40px);
+            transform: scale(2) translateX(50px) translateY(40px);
+    offset-distance: 20%;
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: scale(0.5) translateX(-20px) translateY(-60px);
+            transform: scale(0.5) translateX(-20px) translateY(-60px);
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(2) translateX(40px) translateY(-40px);
+            transform: scale(2) translateX(40px) translateY(-40px);
+    offset-distance: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes hover {
+  0% {
+    -webkit-transform: scale(1) translateX(10px) translateY(60px);
+            transform: scale(1) translateX(10px) translateY(60px);
+    offset-distance: 50%;
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: scale(0.5) translateX(-20px) translateY(20px);
+            transform: scale(0.5) translateX(-20px) translateY(20px);
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: scale(2) translateX(50px) translateY(40px);
+            transform: scale(2) translateX(50px) translateY(40px);
+    offset-distance: 20%;
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: scale(0.5) translateX(-20px) translateY(-60px);
+            transform: scale(0.5) translateX(-20px) translateY(-60px);
+    offset-distance: 10%;
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(2) translateX(40px) translateY(-40px);
+            transform: scale(2) translateX(40px) translateY(-40px);
+    offset-distance: 50%;
+    opacity: 1;
+  }
 }
 
 .divider {
@@ -366,21 +620,22 @@ nav .navigation {
 }
 
 nav button {
-  background-color: transparent;
+  margin: 0rem 2rem;
+  padding: 0.2rem 0.5rem;
   border: none;
   color: #a7d7cc;
-  margin: 0rem 2rem;
-  font-size: 1.2rem;
+  background-color: transparent;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 nav button:hover {
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
   background-color: #a7d7cc;
   color: #2b5757;
-  padding: 0.2rem 0.5rem;
   text-align: center;
-  border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -728,6 +983,9 @@ html {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
   }
+  #checkIt {
+    font-size: 1.1rem;
+  }
   .container {
     height: 510px;
     width: 410px;
@@ -759,7 +1017,7 @@ html {
 }
 
 @media screen and (min-width: 700px) {
-  .project1, .project2, .project3, .project4 {
+  .project1, .project2, .project3, .project4, .CSSplayground {
     height: 27vw;
     width: 20vw;
     border-radius: 15px;

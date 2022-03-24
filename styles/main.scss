@@ -80,16 +80,9 @@ div > p {
             transition-duration: 0.5s;
           }
     }
-}
 
-// .project1 .project2 .project3 .project4{
-//     height: 40vw;
-//     width: 30vw;
-//     margin-top: 0;
-//     border-radius: 15px;
-//     border-width: 5px;
-//     border-color: $dark-color;
-//   }
+  
+}
 
 #checkIt{
 font-size: 1.1rem;
@@ -120,6 +113,26 @@ font-size: 1.1rem;
     li{
         font-size: 1rem;
     }
+  }
+
+  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack{
+      
+      padding: 0rem 0rem;
+  }
+
+  #PsmallFont{
+    max-width: 80%;
+    
+  }
+
+  .projectTitle{
+    font-size: 0.8rem;
+    
+  }
+  
+  .techStack{
+    
+    font-size: 0.65rem; 
   }
 
 }

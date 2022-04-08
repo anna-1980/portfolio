@@ -976,6 +976,7 @@ i {
 }
 
 html {
+  scroll-behavior: smooth;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #031c2c), color-stop(70%, #17326d), color-stop(130%, #af3fb9)) no-repeat;
   background: linear-gradient(180deg, #031c2c 8%, #17326d 70%, #af3fb9 130%) no-repeat;
   color: #a7d7cc;

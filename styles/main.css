@@ -902,7 +902,7 @@ nav .active {
   52% {
     -webkit-transform: translateX(355px) translateY(15px) skewY(-15deg) scale(1.05) rotateY(110deg);
             transform: translateX(355px) translateY(15px) skewY(-15deg) scale(1.05) rotateY(110deg);
-    opacity: 0.2;
+    opacity: 0.1;
   }
   60% {
     -webkit-transform: translateX(150px) translateY(-15px) skewY(10deg) scale(0.3) rotateY(110deg);
@@ -955,7 +955,7 @@ nav .active {
   52% {
     -webkit-transform: translateX(355px) translateY(15px) skewY(-15deg) scale(1.05) rotateY(110deg);
             transform: translateX(355px) translateY(15px) skewY(-15deg) scale(1.05) rotateY(110deg);
-    opacity: 0.2;
+    opacity: 0.1;
   }
   60% {
     -webkit-transform: translateX(150px) translateY(-15px) skewY(10deg) scale(0.3) rotateY(110deg);

@@ -23,12 +23,14 @@ html{
 
     ) no-repeat;
     color: $green-bright;
-    font-family: 'Balsamiq Sans', cursive;
+  
     
    
 }
 
-
+body{
+    font-family: 'Balsamiq Sans', cursive;
+}
 
 
 
@@ -41,6 +43,7 @@ p{
 
 h1{
     font-size: 4rem;
+   
 }
 
 h2{

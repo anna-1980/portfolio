@@ -49,14 +49,14 @@ h1 {
 .projectTitle {
   max-width: 80%;
   margin-top: 0.5rem;
-  font-size: 1.1;
+  font-size: 1.3rem;
   color: #a7d7cc;
   color: inherit;
 }
 
 .projectDescription {
   max-width: 80%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 100;
   text-align: justify;
 }
@@ -1149,6 +1149,19 @@ body {
     width: 27vw;
     border-radius: 15px;
     border-width: 5px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
+    height: 30vw;
+    width: 400px;
+    border-radius: 15px;
+    border-width: 5px;
+    margin: 0rem 1rem;
+  }
+  .projectDescription, .projectTitle {
+    max-width: 400px;
   }
 }
 /*# sourceMappingURL=main.css.map */

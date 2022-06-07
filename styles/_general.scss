@@ -6,7 +6,7 @@ section {
 a{
 color:$secondary-color-b;
 text-decoration: none;
-
+flex: 1;
 }
 
 h1 {
@@ -29,6 +29,25 @@ h1 {
 
 #myName{
   font-family: 'Righteous', cursive;
+}
+.positionRelative{
+  position: relative;
+}
+
+.projectTitle{
+  max-width: 80%;
+  margin-top: 0.5rem;
+  font-size: 1.1;
+  color: $green-bright;
+  color: inherit;
+}
+
+.projectDescription{
+  max-width: 80%;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-align: justify;
+   
 }
 
 h2 {
@@ -91,18 +110,22 @@ ul{
 
 .projectframes {
   @include flex(row, center, flex-start);
-  
+ 
   padding-bottom: 0.5rem;
   .projectframes__Margin {
+    @include flex(column, center, center);
     flex: 1;
     margin: 1rem 0.5rem;
   }
 }
 
-.project1 {
-  position: relative;
+.project1, .project2, .project3, .project4, .CSSplayground, .project6{
   height: 40vw;
-  width: 25vw;
+  width: 29vw;
+   
+}
+
+.project1 {
   background-image: url(../assets/XmasMarket);
   background-size: cover;
   overflow: hidden;
@@ -112,9 +135,6 @@ ul{
 }
 
 .project2 {
-  height: 40vw;
-  width: 25vw;
-  
   background-image: url(../assets/ScienceArcade.png);
   background-size: cover;
   overflow: hidden;
@@ -124,9 +144,6 @@ ul{
 }
 
 .project3 {
-  height: 40vw;
-  width: 25vw;
-  
   background-image: url(../assets/BiologyBag.png);
   background-size: cover;
   overflow: hidden;
@@ -135,12 +152,7 @@ ul{
   border-color: $dark-color;
 }
 
-
-
 .project4 {
-  height: 40vw;
-  width: 25vw;
- 
   background-image: url(../assets/AngryVirusesCover2.png);
   background-size: cover;
   overflow: hidden;
@@ -148,10 +160,18 @@ ul{
   border-width: 2px;
   border-color: $dark-color;
 }
+
+.project6{
+  background-image: url(../assets/ScratchProjectsCollection.png);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: $dark-color;
+}
+
 // css playground animations
 .CSSplayground{
-  height: 40vw;
-  width: 25vw;
   position: relative;
   padding: 0.5rem 0.5rem;
   background-color: azure;
@@ -362,19 +382,19 @@ ul{
 //   position: relative;
 // }
 
-.project1, .project2, .project3, .project4{
+.project1, .project2, .project3, .project4, .project6{
   position: relative;
   overflow: hidden;
 }
 
-.project1:hover,.project2:hover, .project3:hover, .project4:hover{
-  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+.project1:hover,.project2:hover, .project3:hover, .project4:hover, .project6:hover{
+  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
     opacity: 1;
   }
 
 }
 
-.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack {
+.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
   left: 0;
   top: 0;
   height: 100%;
@@ -390,12 +410,6 @@ ul{
   transition: all 1s;
 }
 
-.projectTitle{
-  font-size: 1rem;
-  color: black;
-  font-family: arial;
-  font-weight: 600;
-}
 
 .techStack{
   color: black;

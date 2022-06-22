@@ -18,6 +18,10 @@ section {
   margin: 0;
 }
 
+hr {
+  color: #af3fb9;
+}
+
 a {
   color: #f292d2;
   text-decoration: none;

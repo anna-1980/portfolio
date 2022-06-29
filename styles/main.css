@@ -28,6 +28,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 10px;
 }
 
 h1 {
@@ -174,6 +175,8 @@ ul {
 .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
   height: 40vw;
   width: 29vw;
+  -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+          box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
 }
 
 .project1 {
@@ -204,7 +207,7 @@ ul {
 }
 
 .project4 {
-  background-image: url(../assets/AngryVirusesCover2.png);
+  background-image: url(../assets//MERN-shop.png);
   background-size: cover;
   overflow: hidden;
   border-radius: 15px;
@@ -493,8 +496,8 @@ ul {
   width: 100%;
   padding: 0.5rem 1rem;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.4)));
-  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.4));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.6)));
+  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.6));
   font-family: arial;
   font-weight: 600;
   opacity: 0;
@@ -1158,8 +1161,8 @@ body {
 
 @media screen and (min-width: 1500px) {
   .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
-    height: 30vw;
-    width: 400px;
+    height: 25vw;
+    width: 320px;
     border-radius: 15px;
     border-width: 5px;
     margin: 0rem 1rem;

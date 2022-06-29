@@ -204,7 +204,7 @@ ul {
 }
 
 .project4 {
-  background-image: url(../assets/AngryVirusesCover2.png);
+  background-image: url(../assets//MERN-shop.png);
   background-size: cover;
   overflow: hidden;
   border-radius: 15px;
@@ -493,8 +493,8 @@ ul {
   width: 100%;
   padding: 0.5rem 1rem;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.4)));
-  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.4));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.6)));
+  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.6));
   font-family: arial;
   font-weight: 600;
   opacity: 0;

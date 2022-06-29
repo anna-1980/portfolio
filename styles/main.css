@@ -28,6 +28,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 10px;
 }
 
 h1 {
@@ -174,6 +175,8 @@ ul {
 .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
   height: 40vw;
   width: 29vw;
+  -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+          box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
 }
 
 .project1 {
@@ -1158,8 +1161,8 @@ body {
 
 @media screen and (min-width: 1500px) {
   .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
-    height: 30vw;
-    width: 400px;
+    height: 25vw;
+    width: 320px;
     border-radius: 15px;
     border-width: 5px;
     margin: 0rem 1rem;

@@ -116,7 +116,7 @@ ul{
 
 .projectframes {
   @include flex(row, center, flex-start);
-  
+  flex-wrap: wrap;
   
  
   padding-bottom: 0.5rem;
@@ -128,8 +128,8 @@ ul{
 }
 
 .project1, .project2, .project3, .project4, .CSSplayground, .project6{
-  height: 40vw;
-  width: 29vw;
+  height: 45vw;
+  width: 45vw;
   box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
 }
 

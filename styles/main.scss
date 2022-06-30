@@ -70,7 +70,7 @@ h3{
   
   .projectDescription{  
     max-width: 95%;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 100;
   }
 
@@ -90,45 +90,35 @@ div > p {
     font-size: 0.5rem;
     width: 100%;
     padding: 0;
-    
-    
-
     button{
-         
-        margin: 0 0.3rem;
-        padding: 0.2rem 0.3rem;
-        font-size: 1rem;
-        border: 1px solid rgba(167, 215, 204, 0.5);
-        border-radius: 10px;
-        &:hover{
-            background-color: $green-bright;
-            color: $green-dark;
-            padding: 0.2rem 0.3rem;
-            text-align: center;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition-duration: 0.5s;
+      margin: 0 0.3rem;
+      padding: 0.2rem 0.3rem;
+      font-size: 1rem;
+      border: 1px solid rgba(167, 215, 204, 0.5);
+      border-radius: 10px;
+      &:hover{
+          background-color: $green-bright;
+          color: $green-dark;
+          padding: 0.2rem 0.3rem;
+          text-align: center;
+          border-radius: 10px;
+          font-size: 1rem;
+          transition-duration: 0.5s;
           }
     }
+}
 
-  
+.project1, .project2, .project3, .project4, .CSSplayground, .project6{
+  height: 80vw;
+  width: 80vw;
+  border-radius: 15px;
+  border-width: 5px;
+   
 }
 
 #checkIt{
 font-size: 1.1rem;
 }
-
-
-.container {
-    height: 510px;
-    width: 410px;
-    // margin: auto;
-    position: relative;
-    @include flex(row, center, center);
-  }
-
-
-
 
   .skills{
    

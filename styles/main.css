@@ -1083,13 +1083,15 @@ body {
     font-weight: 700;
   }
   .navigation {
+    display: inline-block;
     font-size: 0.5rem;
     width: 100%;
-    padding: 0;
+    padding: 0.4rem;
   }
   .navigation button {
-    margin: 0 0.3rem;
-    padding: 0.2rem 0.3rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.3rem 0.4rem;
     font-size: 1rem;
     border: 1px solid rgba(167, 215, 204, 0.5);
     border-radius: 10px;
@@ -1103,6 +1105,10 @@ body {
     font-size: 1rem;
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
+  }
+  .navigation a {
+    padding: 0;
+    margin: 0;
   }
   .project1, .project2, .project3, .project4, .CSSplayground, .project6 {
     height: 80vw;

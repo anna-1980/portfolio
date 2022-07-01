@@ -25,19 +25,34 @@
 
 </head>
 <body>
+    <span id="backToTop"></span>
     <nav>
-        <div class="navigation" id="backToTop">
+        <div class="navigation" >
             <a href='./index.html'><button class='link active'>Home</button></a>
-            <a href='#projects'><button  >Projects</button></a>
+            <a href='./index.html#projects'><button  >Projects</button></a>
             <a href='#skills'><button  >Skills</button></a>
             <a href='#about'><button  >About</button></a>
             <a href='./contact.html' > <button class='link'>Contact</button></a>
             <!-- <a href='./playground.html' > <button class='link'>CSS fun</button></a> -->
         </div>
     </nav>
-    <section>
+    <section id="pageHead__smallScreens">
         <h1 id="myName">Anna Zdyb</h1>
         <h2>Web developer / Graphic designer</h2>
+        <input type="checkbox" id="toggle">
+        <div class="navCompact">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <span class="span4"></span>
+        </div>
+        <div class="openMenu">
+            <button  class="compactMenuBtn"><a href='./index.html'>Home</a></button> 
+            <button class="compactMenuBtn" ><a href='./index.html#projects' >Projects</a></button>
+            <button  class="compactMenuBtn"><a href='./index.html#skills' class="clicked1">Skills</a></button> 
+            <button class="compactMenuBtn" ><a href='./index.html#about'class="clicked2">About</a></button> 
+            <button class="compactMenuBtn" ><a href='./contact.html' >Contact</a></button> 
+        </div>
     </section>
     <section>
         <div class="container">
@@ -52,8 +67,8 @@
             <div class="picture"></div>
         </div>
     </section>
-    <p>I am a graduate of a WBS Coding School Web Development boot camp. <br> I like programming, graphic design and Phaser. </p> 
-        <p>I am the founder of my own company &#8211; Biology Bag of Wonders.</p>
+    <p>Programmer, Designer, Scientist<br>  
+    
     <p> Below you can see examples of my <a href='#projects'>projects</a>.</p>
      
     <section>   
@@ -294,6 +309,26 @@
    </section>
    <div class="copyright">2022 © Anna Zdyb </div>
 </body>
+<script>
+    const openMenu = document.querySelector(".navCompact");
+    const toggleMenu = document.querySelector(".openMenu");
+    const toggleCheck = document.querySelector("#toggle");
+    const hideMenu3 = document.querySelector(".clicked3");
+    
+    openMenu.addEventListener('click',function(){
+    openMenu.classList.toggle("open");
+    console.log('something');
+});
+    toggleMenu.addEventListener('click',function(){ 
+        // toggleMenu.classList.toggle("open");
+        toggleCheck.checked=false;
+    console.log('linkclicked');
+});
+toggleCheck.addEventListener('click',function(){ 
+        // toggleMenu.classList.toggle("open");
+    console.log('check uncheck');
+});
+</script>
 </html>
 
 

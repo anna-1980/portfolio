@@ -9,17 +9,18 @@
 }
 
 .picture {
-  transform-origin: center;
-  top: 0;
   position: absolute;
-  z-index: 1;
-  height: 352px;
-  width: 372px;
   max-width: 450px;
   max-height: 450px;
+  top: 0;
+  height: 342px;
+  width: 342px;
+  border-radius: 50%;
   background-image: url(../assets/anna-green03c.png);
   background-size: cover;
-  // transform:rotateY(-80deg);
+  transform-origin: center;
+  box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
+  z-index: 1;
 }
 
 .box1 {
@@ -71,7 +72,7 @@
   opacity: 0;
   height: $skill-box;
   width: $skill-box;
-  background-image: url(../assets/redux.png);
+  background-image: url(../assets/redux-green.png);
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
@@ -129,7 +130,7 @@
 
 .box8 {
   opacity: 0;
-  background-image: url(../assets/mongoDB-2.png);
+  background-image: url(../assets/mongoDB-3.png);
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;

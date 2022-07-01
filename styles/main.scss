@@ -40,7 +40,8 @@ body{
     border-radius: 15px;
     border-width: 5px;
      
-}
+  }
+ 
 }
 
 @media screen and (max-width: 540px) {
@@ -49,19 +50,150 @@ p{
     font-size: 1rem;
 }
 
-h1{
+#myName{
     font-size: 4rem;
-   
+    margin-top: 0.6rem;
 }
 
 h2{
     font-size: 1.2rem;
+    padding-left: 0.9rem;
 }
 
 h3{
     font-size: 1.5rem;
 }
 
+
+nav{
+  display: none;
+}
+
+//-------hamburger menu-------//
+.navCompact{
+  position: absolute;
+  width: 4rem;
+  height: 2.5rem;
+  right:2rem;
+  z-index: 5;
+}
+
+#toggle{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 2.5rem;
+  z-index: 6;
+
+}
+span{
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  transition: all 0.5s;
+  background-color: $green-bright;
+ }
+
+ .navCompact span:nth-child(1){
+  top: 0 ;
+ 
+}
+.navCompact span:nth-child(2){
+  top: 1.25rem;
+
+}
+.navCompact span:nth-child(3){
+  top: 1.25rem;
+}
+.navCompact span:nth-child(4){
+  top: 2.5rem;
+}
+ 
+input:checked ~ .navCompact .span1 {
+  transform: rotateZ(-45deg);
+  transform-origin: right;
+  opacity:0;
+}
+input:checked ~ .navCompact .span2 {
+  transform: rotateZ(45deg);
+}
+
+input:checked ~ .navCompact .span3 {
+  transform: rotateZ(-45deg);
+}
+input:checked ~ .navCompact .span4 {
+  transform: rotateZ(-45deg);
+  transform-origin: left;
+  opacity:0;
+}
+
+input:checked ~ .openMenu{
+  @include flex(column, start, center);
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  padding-top: 1.8rem;
+  background-color: $dark-color;
+  z-index: 3;
+}
+.compactMenuBtn{
+  position: relative;
+  border: 2px solid $green-bright;
+  border-radius: 20px;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+   a{
+     color: $green-bright;
+     background-color: none;
+     padding: 1rem;
+   }
+   &:hover{
+    box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
+   }
+}
+.closeCompactMenu{
+  visibility: hidden;
+}
+ 
+.pageHead__smallScreens{
+  position: relative;
+}
+
+//-------hamburger menu-------//
+
+//-------styling the satelite animation for small screens---------//
+.box1, .box2,.box3,.box4,.box5,.box6,.box7,.box8{
+  top: 55%;
+  left: 0%;
+}
+.picture {
+  top: 0;
+  height: 300px;
+  width: 300px;
+  margin-top: 2rem;
+  border-radius: 50%;
+  background-image: url(../assets/anna-green03c.png);
+  background-size: cover;
+  transform-origin: center;
+  box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
+  z-index: 1;
+}
+
+#pageHead__smallScreens{
+  @include flex(column, center, flex-start);
+  padding-bottom: 1.2rem;
+  padding-left:2rem;
+  box-shadow: 2px 2px 8px $gradient1-middle;
+    
+}
+
+//-------styling the satelite animation for small screens---------//
 .projectTitle{ 
     max-width: 95%;
     font-size: 0.8;
@@ -86,16 +218,21 @@ div > p {
 
 }
 .navigation{ 
-    // background-color: purple;
+   display: inline-block;
+    // @include flex(row, center, center);
+    // justify-content: space-around;
     font-size: 0.5rem;
     width: 100%;
-    padding: 0;
+    padding: 0.4rem;
+    
     button{
-      margin: 0 0.3rem;
-      padding: 0.2rem 0.3rem;
+      display: block;
+      margin:  0 auto;
+      padding: 0.3rem 0.4rem;
       font-size: 1rem;
       border: 1px solid rgba(167, 215, 204, 0.5);
       border-radius: 10px;
+     
       &:hover{
           background-color: $green-bright;
           color: $green-dark;
@@ -106,6 +243,11 @@ div > p {
           transition-duration: 0.5s;
           }
     }
+     a{
+      
+      padding:0;
+      margin:0;
+     }
 }
 
 .project1, .project2, .project3, .project4, .CSSplayground, .project6{

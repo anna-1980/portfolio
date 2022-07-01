@@ -739,6 +739,18 @@ nav .active {
           box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
 }
 
+#toggle {
+  opacity: 0;
+}
+
+.pageHead__smallScreens {
+  display: none;
+}
+
+.openMenu {
+  display: none;
+}
+
 .container {
   height: 400px;
   width: 410px;
@@ -761,17 +773,20 @@ nav .active {
 }
 
 .picture {
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  top: 0;
   position: absolute;
-  z-index: 1;
-  height: 352px;
-  width: 372px;
   max-width: 450px;
   max-height: 450px;
+  top: 0;
+  height: 342px;
+  width: 342px;
+  border-radius: 50%;
   background-image: url(../assets/anna-green03c.png);
   background-size: cover;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+          box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+  z-index: 1;
 }
 
 .box1 {
@@ -1055,14 +1070,161 @@ body {
   p {
     font-size: 1rem;
   }
-  h1 {
+  #myName {
     font-size: 4rem;
+    margin-top: 0.6rem;
   }
   h2 {
     font-size: 1.2rem;
+    padding-left: 0.9rem;
   }
   h3 {
     font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+  .navCompact {
+    position: absolute;
+    width: 4rem;
+    height: 2.5rem;
+    right: 2rem;
+    z-index: 5;
+  }
+  #toggle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 2.5rem;
+    z-index: 6;
+  }
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-color: #a7d7cc;
+  }
+  .navCompact span:nth-child(1) {
+    top: 0;
+  }
+  .navCompact span:nth-child(2) {
+    top: 1.25rem;
+  }
+  .navCompact span:nth-child(3) {
+    top: 1.25rem;
+  }
+  .navCompact span:nth-child(4) {
+    top: 2.5rem;
+  }
+  input:checked ~ .navCompact .span1 {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    opacity: 0;
+  }
+  input:checked ~ .navCompact .span2 {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  input:checked ~ .navCompact .span3 {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+  input:checked ~ .navCompact .span4 {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    opacity: 0;
+  }
+  input:checked ~ .openMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    padding-top: 1.8rem;
+    background-color: #031c2c;
+    z-index: 3;
+  }
+  .compactMenuBtn {
+    position: relative;
+    border: 2px solid #a7d7cc;
+    border-radius: 20px;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+  }
+  .compactMenuBtn a {
+    color: #a7d7cc;
+    background-color: none;
+    padding: 1rem;
+  }
+  .compactMenuBtn:hover {
+    -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+            box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+  }
+  .closeCompactMenu {
+    visibility: hidden;
+  }
+  .pageHead__smallScreens {
+    position: relative;
+  }
+  .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    top: 55%;
+    left: 0%;
+  }
+  .picture {
+    top: 0;
+    height: 300px;
+    width: 300px;
+    margin-top: 2rem;
+    border-radius: 50%;
+    background-image: url(../assets/anna-green03c.png);
+    background-size: cover;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+            box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+    z-index: 1;
+  }
+  #pageHead__smallScreens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+    -webkit-box-shadow: 2px 2px 8px #af3fb9;
+            box-shadow: 2px 2px 8px #af3fb9;
   }
   .projectTitle {
     max-width: 95%;

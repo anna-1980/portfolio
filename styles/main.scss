@@ -33,7 +33,7 @@ body{
 }
 
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 430px){
   .project1, .project2, .project3, .project4, .CSSplayground, .project6{
     height: 80vw;
     width: 80vw;
@@ -41,9 +41,51 @@ body{
     border-width: 5px;
      
   }
- 
-}
 
+  .navCompact{
+   transform: scale(0.7);
+   top:2rem !important;
+   right: 1rem ;
+  
+  }
+ 
+#pageHead__smallScreens{
+   padding: 0;
+ 
+  #myName{
+  font-size: 3rem !important;
+  }
+   
+  h2{
+    font-size: 0.97rem !important;
+    padding-left: 0.4rem !important;
+  }  
+}
+}
+@media screen and (max-width: 465px){
+ 
+
+  .navCompact{
+   transform: scale(0.8);
+   top:2.5rem;
+   right: 1.4rem !important;
+  
+  }
+ 
+#pageHead__smallScreens{
+   padding: 0;
+ 
+  #myName{
+    padding-top: 0.5rem;
+  font-size: 3.8rem;
+  }
+   
+  h2{
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+  }  
+}
+}
 @media screen and (max-width: 540px) {
 
 p{
@@ -136,7 +178,7 @@ input:checked ~ .openMenu{
   top:0;
   left: 0;
   width: 100%;
-  height: 30%;
+  height: 100%;
   padding-top: 1.8rem;
   background-color: $dark-color;
   z-index: 3;
@@ -161,9 +203,7 @@ input:checked ~ .openMenu{
   visibility: hidden;
 }
  
-.pageHead__smallScreens{
-  position: relative;
-}
+ 
 
 //-------hamburger menu-------//
 

@@ -68,7 +68,7 @@ h1 {
 
 h2 {
   color: #a7d7cc;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -487,24 +487,25 @@ ul {
   overflow: hidden;
 }
 
-.project1:hover .Xmas-stack, .project1:hover .arcade-stack, .project1:hover .biology-stack, .project1:hover .Game-stack, .project1:hover .scratch-stack, .project2:hover .Xmas-stack, .project2:hover .arcade-stack, .project2:hover .biology-stack, .project2:hover .Game-stack, .project2:hover .scratch-stack, .project3:hover .Xmas-stack, .project3:hover .arcade-stack, .project3:hover .biology-stack, .project3:hover .Game-stack, .project3:hover .scratch-stack, .project4:hover .Xmas-stack, .project4:hover .arcade-stack, .project4:hover .biology-stack, .project4:hover .Game-stack, .project4:hover .scratch-stack, .project6:hover .Xmas-stack, .project6:hover .arcade-stack, .project6:hover .biology-stack, .project6:hover .Game-stack, .project6:hover .scratch-stack {
+.project1:hover .Xmas-stack, .project1:hover .arcade-stack, .project1:hover .biology-stack, .project1:hover .scratch-stack, .project1:hover .mern-stack, .project2:hover .Xmas-stack, .project2:hover .arcade-stack, .project2:hover .biology-stack, .project2:hover .scratch-stack, .project2:hover .mern-stack, .project3:hover .Xmas-stack, .project3:hover .arcade-stack, .project3:hover .biology-stack, .project3:hover .scratch-stack, .project3:hover .mern-stack, .project4:hover .Xmas-stack, .project4:hover .arcade-stack, .project4:hover .biology-stack, .project4:hover .scratch-stack, .project4:hover .mern-stack, .project6:hover .Xmas-stack, .project6:hover .arcade-stack, .project6:hover .biology-stack, .project6:hover .scratch-stack, .project6:hover .mern-stack {
   opacity: 1;
 }
 
-.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
+.Xmas-stack, .arcade-stack, .biology-stack, .scratch-stack, .mern-stack {
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 230, 230, 0.9)), to(rgba(231, 230, 230, 0.6)));
-  background-image: linear-gradient(rgba(231, 230, 230, 0.9), rgba(231, 230, 230, 0.6));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e6e6), to(rgba(231, 230, 230, 0.8)));
+  background-image: linear-gradient(#e7e6e6, rgba(231, 230, 230, 0.8));
   font-family: arial;
   font-weight: 600;
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
+  overflow: scroll;
 }
 
 .techStack {
@@ -784,8 +785,8 @@ nav .active {
   background-size: cover;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
-          box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
+  -webkit-box-shadow: 1px 1px 4px #d5e5ee, -1px -1px 4px #d5e5ee;
+          box-shadow: 1px 1px 4px #d5e5ee, -1px -1px 4px #d5e5ee;
   z-index: 1;
 }
 
@@ -1074,11 +1075,14 @@ body {
     padding: 0;
   }
   #pageHead__smallScreens #myName {
-    font-size: 3rem !important;
+    font-size: 3.1rem !important;
   }
-  #pageHead__smallScreens h2 {
-    font-size: 0.97rem !important;
-    padding-left: 0.4rem !important;
+  .techStack {
+    font-size: 1rem;
+  }
+  #webDev {
+    font-size: 2.2rem !important;
+    padding-left: 0.5rem;
   }
 }
 
@@ -1096,9 +1100,13 @@ body {
     padding-top: 0.5rem;
     font-size: 3.8rem;
   }
-  #pageHead__smallScreens h2 {
+  #pageHead__smallScreens .skills h2 {
     font-size: 1.2rem;
     padding-left: 0.6rem;
+  }
+  #webDev {
+    font-size: 2.2rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -1110,10 +1118,14 @@ body {
     font-size: 4rem;
     margin-top: 0.6rem;
   }
-  h2 {
-    font-size: 1.3rem !important;
+  .skills h2 {
+    font-size: 1.3rem;
     padding-left: 0.2rem;
     text-align: left;
+  }
+  #webDev {
+    font-size: 2.2rem;
+    padding-left: 0.5rem;
   }
   h3 {
     font-size: 1.5rem;
@@ -1325,9 +1337,6 @@ body {
   .skills li {
     font-size: 1rem;
   }
-  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
-    padding: 0rem 0rem;
-  }
   #PsmallFont {
     max-width: 80%;
   }
@@ -1335,7 +1344,7 @@ body {
     font-size: 0.8rem;
   }
   .techStack {
-    font-size: 0.65rem;
+    font-size: 1rem;
   }
 }
 

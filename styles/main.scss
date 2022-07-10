@@ -53,14 +53,18 @@ body{
    padding: 0;
  
   #myName{
-  font-size: 3rem !important;
+  font-size: 3.1rem !important;
   }
-   
-  h2{
-    font-size: 0.97rem !important;
-    padding-left: 0.4rem !important;
-  }  
 }
+ 
+  .techStack{
+      
+      font-size: 1rem; 
+    }
+  #webDev{
+    font-size: 2.2rem !important;
+    padding-left: 0.5rem;
+  }
 }
 @media screen and (max-width: 465px){
  
@@ -79,12 +83,19 @@ body{
     padding-top: 0.5rem;
   font-size: 3.8rem;
   }
-   
-  h2{
-    font-size: 1.2rem;
-    padding-left: 0.6rem;
-  }  
+  
+  .skills{
+    h2{
+      font-size: 1.2rem;
+      padding-left: 0.6rem;
+    }  
+  }
+  
 }
+  #webDev{
+    font-size: 2.2rem ;
+    padding-left: 0.5rem;
+  }
 }
 @media screen and (max-width: 540px) {
 
@@ -96,11 +107,17 @@ p{
     font-size: 4rem;
     margin-top: 0.6rem;
 }
-
-h2{
-    font-size: 1.3rem !important;
+.skills{
+  h2{
+    font-size: 1.3rem ;
     padding-left: 0.2rem;
     text-align: left;
+}
+}
+
+#webDev{
+  font-size: 2.2rem ;
+  padding-left: 0.5rem;
 }
 
 h3{
@@ -318,11 +335,6 @@ font-size: 1.1rem;
     }
   }
 
-  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack{
-      
-      padding: 0rem 0rem;
-  }
-
   #PsmallFont{
     max-width: 80%;
     
@@ -335,7 +347,7 @@ font-size: 1.1rem;
   
   .techStack{
     
-    font-size: 0.65rem; 
+    font-size: 1rem; 
   }
 
 }

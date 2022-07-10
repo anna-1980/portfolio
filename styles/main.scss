@@ -102,10 +102,18 @@ body{
 p{
     font-size: 1rem;
 }
+form{
+  margin: 1rem auto;
+}
 
 #myName{
     font-size: 4rem;
     margin-top: 0.6rem;
+}
+
+#webDev{
+  font-size: 2.2rem ;
+  padding-left: 0.5rem;
 }
 .skills{
   h2{
@@ -113,11 +121,6 @@ p{
     padding-left: 0.2rem;
     text-align: left;
 }
-}
-
-#webDev{
-  font-size: 2.2rem ;
-  padding-left: 0.5rem;
 }
 
 h3{

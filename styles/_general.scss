@@ -83,6 +83,7 @@ p {
 textarea, input{
   font-family: 'Balsamiq Sans', cursive;
   font-size: 0.9rem;
+  width: 100%;
 }
 
 div > p {
@@ -177,7 +178,7 @@ ul{
   border-color: $dark-color;
 }
 
-// css playground animations
+//---------------css playground animations
 .CSSplayground{
   position: relative;
   padding: 0.5rem 0.5rem;
@@ -382,12 +383,9 @@ ul{
   text-align: center;
 }
 
-// css playground animations
+//------------- css playground animations
 
-// hover over descriptions of my projects
-// .projectframes > div {
-//   position: relative;
-// }
+//-------------hover over descriptions of my projects
 
 .project1, .project2, .project3, .project4, .project6{
   position: relative;
@@ -425,12 +423,15 @@ ul{
   line-height: 120%;
 }
 
-// hover over descriptions of my projects
-.contactForm {
-  @include flex(row, center, center);
-  color: $bright-color2;
-  
+//-------------hover over descriptions of my projects
+
+form{
+  @include flex(column, center, center);
+  margin: 0 auto;
+  width: 384px;
+  padding-left: 0.8rem;
 }
+
 
 .nameInput,
 .emailAddress,
@@ -439,6 +440,7 @@ ul{
  {
   @include flex(column, center, flex-start);
   padding: 0.5rem;
+  width: 100%;
   
 }
 

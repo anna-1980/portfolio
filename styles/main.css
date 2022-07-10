@@ -1217,6 +1217,7 @@ body {
   }
   .compactMenuBtn {
     position: relative;
+    width: 7rem;
     border: 2px solid #a7d7cc;
     border-radius: 20px;
     margin: 0.5rem 1rem;

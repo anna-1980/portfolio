@@ -19,7 +19,6 @@ h1 {
   display: inline-block;
   background: linear-gradient(
       180deg,
-     
       $gradient1-middle 45%,
       $green-bright 85%
     )
@@ -58,7 +57,7 @@ h1 {
 
 h2 {
   color: $green-bright;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -396,26 +395,27 @@ ul{
 }
 
 .project1:hover,.project2:hover, .project3:hover, .project4:hover, .project6:hover{
-  .Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
+  .Xmas-stack, .arcade-stack, .biology-stack, .scratch-stack, .mern-stack {
     opacity: 1;
   }
 
 }
 
-.Xmas-stack, .arcade-stack, .biology-stack, .Game-stack, .scratch-stack {
+.Xmas-stack, .arcade-stack, .biology-stack, .scratch-stack, .mern-stack {
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   margin: 0 auto;
   background-image: linear-gradient( 
-    rgba(231, 230, 230, 0.9), 
-    rgba(231, 230, 230, 0.6)) ;
+    rgba(231, 230, 230, 1), 
+    rgba(231, 230, 230, 0.8)) ;
   font-family: arial;
   font-weight: 600;
   opacity: 0;
   transition: all 1s;
+  overflow: scroll;
 }
 
 

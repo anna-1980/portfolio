@@ -93,7 +93,14 @@
           </a>
         
         </div>
-        <div class="copyright">2022 © Anna Zdyb </div>
+        <div class="copyright" id="year"></div>
+        <script >
+            const year = document.querySelector(".copyright");
+        const date = new Date().getFullYear();
+        
+        year.innerHTML = `${date} © Anna Zdyb`;
+        console.log(year);
+        </script>
       </div>
  
 </body>

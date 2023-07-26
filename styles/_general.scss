@@ -28,7 +28,7 @@ h1 {
   color: transparent;
   font-size: 4.4rem;
   margin-top: 3vw;
-  margin-left: 1vw;
+
   
 }
 
@@ -237,12 +237,7 @@ ul{
   width: 90%;
   position: relative;
   z-index: 1;
-  //   &:hover{
-  //     cursor: pointer;
-  //     opacity: 1;
-  //     transition: 1s;
-  // }
-  // background-color: red;
+
 }
 
 
@@ -429,7 +424,6 @@ form{
   @include flex(column, center, center);
   margin: 0 auto;
   width: 384px;
-  padding-left: 0.8rem;
 }
 
 
@@ -445,17 +439,17 @@ form{
 }
 
 .formButton {
-  margin-left: 0.5rem;
   background-color: $secondary-color-b;
   border: none;
   color: $secondary-color-d;
-  padding: 0.3rem 0.5rem;
+  padding: 0.2rem 0.6rem;
   text-align: center;
   border-radius: 20px;
   font-family: 'Balsamiq Sans', cursive;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  cursor: pointer;
+
+
   &:hover {
     background-color: $secondary-color-d;
     color: $secondary-color-b;
@@ -463,6 +457,7 @@ form{
     border-radius: 20px;
     box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
     transition-duration: 0.5s;
+    cursor: pointer;
   }
 }
 
@@ -482,8 +477,14 @@ form{
 .footer {
   @include flex(column, center, center);
   padding-bottom: 40vh;
+  padding-top: 1rem;
+  &__links {
+    @include flex(row, center, center);
+   width: fit-content;
+   
+  }
   a{
-    padding: 1rem;
+    padding: 0rem 1rem;
 
   }
   i {
@@ -496,15 +497,9 @@ form{
       box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
     }
   }
-  div {
-    padding: 0.2rem;
-    color: $green-bright;
-  }
 }
 
-.links {
-  @include flex(row, center, center);
-}
+
 
 .copyright{
   text-align: center;
@@ -517,12 +512,3 @@ form{
   padding-bottom: 0.2rem;
 }
 
- 
-
-// background: linear-gradient(
-//      180deg,
-//      $secondary-color-d 10%,
-//      $secondary-color-b 30%,
-//      $secondary-color-d 90%
-//    )
-//    no-repeat;

@@ -38,9 +38,9 @@
     <nav>
       <div class="navigation">
         <a href="./index.html"><button class="link active">Home</button></a>
-        <a href="./index.html#projects"><button>Projects</button></a>
-        <a href="#skills"><button>Skills</button></a>
-        <a href="#about"><button>About</button></a>
+        <a href="./index.html#projects"><button class="link">Projects</button></a>
+        <a href="#skills"><button class="link">Skills</button></a>
+        <a href="#about"><button class="link">About</button></a>
         <a href="./contact.html"> <button class="link">Contact</button></a>
         <!-- <a href='./playground.html' > <button class='link'>CSS fun</button></a> -->
       </div>
@@ -78,7 +78,7 @@
             <div class="box3"><i class="fa-brands fa-sass"></i></div>
             <div class="box4"><i class="fa-brands fa-js"></i> </div>
             <div class="box5"> <i class="fa-brands fa-react"></i></div>
-            <div class="box6"></div>
+            <div class="box6"> </div>
             <div class="box7"> <i class="fa-brands fa-node-js"></i></div>
             <div class="box8"> </div>
             <div class="picture"></div>
@@ -101,10 +101,9 @@
                 <li>CSS</li>
                 <li>Sass</li>
                 <li>JavaScript</li>
-                <li>TypeScript</li>
+                <li>Phaser 3</li>
                 <li>React</li>
-                <li>Next.js</li>
-                <li>GraphQL</li>
+                <li>Redux</li>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MongoDB</li>
@@ -112,7 +111,6 @@
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>Netlify</li>
-                <li>Phaser 3</li>
             </ul>
         </div>
         <div>
@@ -120,6 +118,7 @@
             <ul>
                 <li>Adobe Illustrator</li>
                 <li>Affinity Designer</li>
+                <li>Inkscape</li>
                 <li>Figma</li>
                 <li>Adobe XD</li>
                 <li>Photoshop</li>
@@ -358,36 +357,31 @@
       <br />
       <a href="#backToTop"><button class="formButton">&uarr;</button></a>
     </section>
-    <div class="copyright">2022 © Anna Zdyb</div>
+    <!-- <div class="copyright"></div> -->
+    <div class="footer">
+        <div class="footer__links">
+          <a href="https://github.com/anna-1980" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+          </a>
+         
+          <a href="https://www.linkedin.com/in/dr-anna-zdyb/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/anna.z.z.a.g/?hl=en" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        
+        </div>
+        <div class="copyright" id="year"></div>
+        <script >
+            const year = document.querySelector(".copyright");
+        const date = new Date().getFullYear();
+        
+        year.innerHTML = `${date} © Anna Zdyb`;
+        console.log(year);
+        </script>
+      </div>
   </body>
-  <script>
-    const year = document.querySelector(".copyright");
-    const date = new Date().getFullYear();
 
-    year.innerHTML = `${date} © Anna Zdyb`;
-    console.log(year);
-
-    const openMenu = document.querySelector(".navCompact");
-    const toggleMenu = document.querySelector(".openMenu");
-    const toggleCheck = document.querySelector("#toggle");
-    const hideMenu3 = document.querySelector(".clicked3");
-
-    openMenu.addEventListener("click", function () {
-      openMenu.classList.toggle("open");
-      console.log("something");
-    });
-    toggleMenu.addEventListener("click", function () {
-      // toggleMenu.classList.toggle("open");
-      toggleCheck.checked = false;
-      console.log("linkclicked");
-    });
-    toggleCheck.addEventListener("click", function () {
-      // toggleMenu.classList.toggle("open");
-      console.log("check uncheck");
-    });
-  </script>
 </html>
 
-<!-- <i class="fa-brands fa-github"></i> -->
-<!-- <a href="https://ibb.co/09Bs4Mz"><img src="https://i.ibb.co/09Bs4Mz/WEB-Portfolio-thumb-02.png" alt="WEB-Portfolio-thumb-02" border="0"></a> -->
-<!-- https://ibb.co/09Bs4Mz -->

@@ -18,11 +18,11 @@
 <body>
     <nav>
         <div class="navigation">
-            <a href='./index.html'><button  >Home</button></a>
-            <a href='./index.html#projects'><button   >Projects</button></a>
-            <a href='./index.html#skills'><button  >Skills</button></a>
-            <a href='./index.html#about'><button  >About</button></a>
-            <a href='./contact.html' > <button class=' active'>Contact</button></a>
+            <a href='./index.html'><button class="link" >Home</button></a>
+            <a href='./index.html#projects'><button class="link"  >Projects</button></a>
+            <a href='./index.html#skills'><button class="link" >Skills</button></a>
+            <a href='./index.html#about'><button class="link" >About</button></a>
+            <a href='./contact.html' > <button class=' link active'>Contact</button></a>
             <!-- <a href='./playground.html' > <button >CSS fun</button></a> -->
         </div>
     </nav>
@@ -72,18 +72,15 @@
           <div class="captcha">
             <div data-netlify-recaptcha="true"></div>
           </div>
-          <div class="buttonDiv">
+          <!-- <div class="buttonDiv"> -->
             <button type="submit" class="formButton">Send</button>
-          </div>
+          <!-- </div> -->
         </form>
 
     <div class="footer">
-        <div class="links">
+        <div class="footer__links">
           <a href="https://github.com/anna-1980" target="_blank" rel="noopener">
             <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/in/dr-anna-zdyb/" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin"></i>
@@ -99,7 +96,7 @@
         const date = new Date().getFullYear();
         
         year.innerHTML = `${date} © Anna Zdyb`;
-        console.log(year);
+    
         </script>
       </div>
  

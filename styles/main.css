@@ -777,29 +777,41 @@ form {
 }
 
 .picture {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 450px;
   max-height: 450px;
   top: 0;
   height: 342px;
   width: 342px;
   border-radius: 50%;
-  background-image: url(../assets/anna-green03c.png);
-  background-size: cover;
-  -webkit-transform-origin: center;
-          transform-origin: center;
   -webkit-box-shadow: 1px 1px 4px #d5e5ee, -1px -1px 4px #d5e5ee;
           box-shadow: 1px 1px 4px #d5e5ee, -1px -1px 4px #d5e5ee;
   z-index: 1;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box7 {
+.picture__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
   opacity: 0;
   height: 4.5rem;
   width: 4.5rem;
   border-radius: 45%;
   position: absolute;
-  top: 55%;
+  top: 75%;
   left: 0%;
 }
 
@@ -851,9 +863,6 @@ form {
   height: 4.5rem;
   width: 4.5rem;
   border-radius: 15px;
-  position: absolute;
-  top: 55%;
-  left: 0%;
 }
 
 .box6 {
@@ -1199,24 +1208,6 @@ body {
   }
   .closeCompactMenu {
     visibility: hidden;
-  }
-  .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
-    top: 55%;
-    left: 0%;
-  }
-  .picture {
-    top: 0;
-    height: 300px;
-    width: 300px;
-    margin-top: 2rem;
-    border-radius: 50%;
-    background-image: url(../assets/anna-green03c.png);
-    background-size: cover;
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
-            box-shadow: 2px 2px 10px #d5e5ee, -2px -2px 10px #d5e5ee;
-    z-index: 1;
   }
   #pageHead__smallScreens {
     display: -webkit-box;

@@ -8,27 +8,33 @@
 }
 
 .picture {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 450px;
   max-height: 450px;
   top: 0;
   height: 342px;
   width: 342px;
   border-radius: 50%;
-  background-image: url(../assets/anna-green03c.png);
-  background-size: cover;
-  transform-origin: center;
   box-shadow: 1px 1px 4px $bright-color2, -1px -1px 4px $bright-color2;
   z-index: 1;
+
+  &__img{
+    height: 100%;
+    width:  100%;
+    border-radius: 50%;
+    object-fit: contain;
+  }
 }
 
-.box1, .box2, .box3, .box4, .box5, .box7{
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8{
   opacity: 0;
   height: $skill-box;
   width: $skill-box;
   border-radius: 45%;
   position: absolute;
-  top: 55%;
+  top: 75%;
   left: 0%;
 }
 .box1 {
@@ -69,9 +75,6 @@
   height: $skill-box;
   width: $skill-box;
   border-radius: 15px;
-  position: absolute;
-  top: 55%;
-  left: 0%;
 }
 
 .box6 {
@@ -101,39 +104,33 @@
   0% {
     transform: translate(-15px) translateY(0px) skewY(8deg) rotateY(45deg)
       scaleX(5%);
-    // z-index: 3;
     opacity: 1;
   }
 
   15% {
     transform: translateX(80px) translateY(20px) scale(1.2);
-    // z-index: 3;
     opacity: 1;
   }
 
   25% {
     transform: translateX(150px) translateY(25px) scale(1.3);
-    // z-index: 3;
     opacity: 1;
   }
 
   35% {
     transform: translateX(250px) translateY(20px) scale(1.2) skewY(-3deg);
-    // z-index: 3;
     opacity: 1;
   }
 
   50% {
     transform: translateX(370px) translateY(15px) skewY(-15deg) scale(1.05)
       rotateY(90deg);
-    // z-index: 3;
     opacity: 1;
   }
 
   52% {
     transform: translateX(355px) translateY(15px) skewY(-15deg) scale(1.05)
       rotateY(110deg);
-    // z-index: 3;
     opacity: 0.1;
   }
 
@@ -141,25 +138,21 @@
 
   60% {
     transform: translateX(150px) translateY(-15px) skewY(10deg) scale(0.3) rotateY(110deg);
-    // z-index: 1;
     opacity: 0;
   }
  
   75% {
     transform: translateX(100px) translateY(-20px) skewY(10deg) scale(0.3);
-    // z-index: 1;
     opacity: 0;
   }
 
   85% {
     transform: translateX(20px) translateY(-25px) skewY(-5deg) scale(0.7) rotateY(-45deg);
-    // z-index: 1;
     opacity: 0;
   }
 
   100% {
     transform: translateX(-15px) translateY(0px) rotateY(80deg);
-    // z-index: 1;
     opacity: 0.2;
   }
 }

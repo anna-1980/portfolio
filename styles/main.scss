@@ -11,8 +11,6 @@
     box-sizing: border-box;
 }
 
-
-
 html{
     scroll-behavior: smooth;
     background: linear-gradient(180deg, 
@@ -132,7 +130,7 @@ nav{
   display: none;
 }
 
-//-------hamburger menu-------//
+//-------burger menu-------//
 .navCompact{
   position: absolute;
   width: 4rem;
@@ -224,28 +222,7 @@ input:checked ~ .openMenu{
 .closeCompactMenu{
   visibility: hidden;
 }
- 
- 
 
-//-------hamburger menu-------//
-
-//-------styling the satelite animation for small screens---------//
-.box1, .box2,.box3,.box4,.box5,.box6,.box7,.box8{
-  top: 55%;
-  left: 0%;
-}
-.picture {
-  top: 0;
-  height: 300px;
-  width: 300px;
-  margin-top: 2rem;
-  border-radius: 50%;
-  background-image: url(../assets/anna-green03c.png);
-  background-size: cover;
-  transform-origin: center;
-  box-shadow: 2px 2px 10px $bright-color2, -2px -2px 10px $bright-color2;
-  z-index: 1;
-}
 
 #pageHead__smallScreens{
   @include flex(column, center, flex-start);

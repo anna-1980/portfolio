@@ -22,7 +22,7 @@
     <meta property="og:title" content="Anna Zdyb" />
     <meta
       property="og:image"
-      content="https://i.ibb.co/VWGFSHF/WEB-Portfolio-thumb-03.png"
+      content="https://i.ibb.co/qWn8JYK/WEB-Portfolio-thumb-03.png"
     />
     <meta
       property="og:description"
@@ -38,7 +38,9 @@
     <nav>
       <div class="navigation">
         <a href="./index.html"><button class="link active">Home</button></a>
-        <a href="./index.html#projects"><button class="link">Projects</button></a>
+        <a href="./index.html#projects"
+          ><button class="link">Projects</button></a
+        >
         <a href="#skills"><button class="link">Skills</button></a>
         <a href="#about"><button class="link">About</button></a>
         <a href="./contact.html"> <button class="link">Contact</button></a>
@@ -72,19 +74,23 @@
       </div>
     </section>
     <section>
-        <div class="container">
-            <div class="box1"> <i class="fa-brands fa-html5"></i></div>
-            <div class="box2"><i class="fa-brands fa-css3-alt"></i></div>
-            <div class="box3"><i class="fa-brands fa-sass"></i></div>
-            <div class="box4"><i class="fa-brands fa-js"></i> </div>
-            <div class="box5"> <i class="fa-brands fa-react"></i></div>
-            <div class="box6"> </div>
-            <div class="box7"> <i class="fa-brands fa-node-js"></i></div>
-            <div class="box8"> </div>
-            <div class="picture">
-                <img  class="picture__img" src="./assets/my-picture.png" alt="Anna Zdyb" />
-            </div>
+      <div class="container">
+        <div class="box1"><i class="fa-brands fa-html5"></i></div>
+        <div class="box2"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="box3"><i class="fa-brands fa-sass"></i></div>
+        <div class="box4"><i class="fa-brands fa-js"></i></div>
+        <div class="box5"><i class="fa-brands fa-react"></i></div>
+        <div class="box6"></div>
+        <div class="box7"><i class="fa-brands fa-node-js"></i></div>
+        <div class="box8"></div>
+        <div class="picture">
+          <img
+            class="picture__img"
+            src="./assets/my-picture.png"
+            alt="Anna Zdyb"
+          />
         </div>
+      </div>
     </section>
     <p>Programmer, Designer, Scientist<br /></p>
 
@@ -97,35 +103,33 @@
 
       <div class="skills">
         <div>
-            <h2 > Web Dev Skills: </h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>GraphQL</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Git</li>
-               
-              
-            </ul>
+          <h2>Web Dev Skills:</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Sass</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>GraphQL</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Git</li>
+          </ul>
         </div>
         <div>
-            <h2> Graphic Skills: </h2>
-            <ul>
-                <li>Figma</li>
-                <li>Adobe Illustrator</li>
-                <li>Affinity Designer</li>
-                <li>Inkscape</li>
-                <li>Adobe XD</li>
-                <li>Photoshop</li>
-                <li>Procreate</li>
-            </ul>
+          <h2>Graphic Skills:</h2>
+          <ul>
+            <li>Figma</li>
+            <li>Adobe Illustrator</li>
+            <li>Affinity Designer</li>
+            <li>Inkscape</li>
+            <li>Adobe XD</li>
+            <li>Photoshop</li>
+            <li>Procreate</li>
+          </ul>
         </div>
       </div>
       <a href="#backToTop"><button class="formButton">&uarr;</button></a>
@@ -361,29 +365,34 @@
     </section>
     <!-- <div class="copyright"></div> -->
     <div class="footer">
-        <div class="footer__links">
-          <a href="https://github.com/anna-1980" target="_blank" rel="noopener">
-            <i class="fa-brands fa-github"></i>
-          </a>
-         
-          <a href="https://www.linkedin.com/in/dr-anna-zdyb/" target="_blank" rel="noopener">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/anna.z.z.a.g/?hl=en" target="_blank" rel="noopener">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        
-        </div>
-        <div class="copyright" id="year"></div>
-        <script >
-            const year = document.querySelector(".copyright");
+      <div class="footer__links">
+        <a href="https://github.com/anna-1980" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/dr-anna-zdyb/"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/anna.z.z.a.g/?hl=en"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="copyright" id="year"></div>
+      <script>
+        const year = document.querySelector(".copyright");
         const date = new Date().getFullYear();
-        
+
         year.innerHTML = `${date} © Anna Zdyb`;
         console.log(year);
-        </script>
-      </div>
+      </script>
+    </div>
   </body>
-
 </html>
-
